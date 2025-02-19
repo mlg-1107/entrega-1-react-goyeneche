@@ -1,0 +1,27 @@
+
+
+.ItemDetailContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    margin: 20px auto;
+  } 
+  
+  .ItemDetailContainer .wrapper {
+    background-color: aquamarine;
+  }
+  
+  .ItemDetailContainer .card-img {
+    width: 300px;
+    height: auto;
+  } 
+  
+  .ItemDetailContainer .card-img .image {
+    width: 250px;
+    margin: 0 auto;
+  }
+   
+  .ItemDetailContainer .title.is-5 {
+    margin-bottom: 10px; 
+  } 
