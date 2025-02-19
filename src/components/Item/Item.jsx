@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 export const Item = ({ id, img, name, price, stock }) => {
   return (
   <div className="container">   

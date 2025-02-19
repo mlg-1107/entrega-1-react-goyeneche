@@ -8,14 +8,11 @@ import Error from './pages/Error';
 import "bulma/css/bulma.css";
 import "./index.css";
 
-
 function App() {
   return (
       <div className="App">
         <BrowserRouter>
           <NavBar />
-          <ItemListContainer />
-          <ItemDetailContainer />
           <Routes>
             <Route path="/" element={<ItemListContainer greeting="Bienvenidos a Full Repuestos" />} />
             <Route path="/category/:categoryId" element={<ItemListContainer />} />

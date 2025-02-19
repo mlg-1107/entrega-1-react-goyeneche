@@ -1,9 +1,11 @@
 
 
 import ItemCount from "../ItemCount/ItemCount";
+import "../asyncMock"
 
 
-export const ItemDetail = ({ id, name, img, descrip, stock, price }) => {
+
+export const ItemDetail = ({ id, name, img, description, stock, price }) => {
 
     return (    
         <div className="card-img"> 
@@ -14,13 +16,12 @@ export const ItemDetail = ({ id, name, img, descrip, stock, price }) => {
    
           <div className="card-content">
             <div className="media-content">
-              <h6 className="subtitle is-6">{ descrip }</h6>  
+              <h6 className="subtitle is-6">{ description }</h6>  
               <p>Precio: ${ price }</p> 
               <ItemCount   
                 initial={ 1 }  
                 stock={ stock } 
-                onAdd={(quantity) => console.log("Su cantidad es: ", quantity )}
-              />   
+                onAdd={(quantity) => console.log("Su cantidad es: ", quantity )}/>   
             </div>  
           
    
