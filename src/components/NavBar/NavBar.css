@@ -1,0 +1,64 @@
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del navbar */
+.navBar {
+    background-color: whitesmoke;
+    padding: 1rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar img {
+    margin-left: 5px;
+    height: 20px;
+    width: auto;
+    align-items: left;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar-start {
+    display: flex;
+    gap: 20px;
+}
+
+/* Opciones del navbar */
+.Option {
+    color: whitesmoke;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.Option:hover {
+    background-color: #555; /* Cambia el fondo al pasar el mouse */
+}
+
+/* Opción activa */
+.ActiveOption {
+    color: #FFD700; /* Amarillo dorado */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Estilos del CartWidget (ajustar según necesites) */
+.cart-widget {
+    font-size: 1.25rem;
+    color: white;
+}
+
+/* Puedes ajustar el tamaño del ícono del carrito si lo necesitas */

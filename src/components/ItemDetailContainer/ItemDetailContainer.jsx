@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getProductById } from ".././asyncMock";
+import { getProductById } from "../../asyncMock";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import "./ItemDetailContainer.css"
@@ -21,8 +21,12 @@ const ItemDetailContainer = () => {
       console.error(err); 
     })
   
-  }, [itemId]) 
- 
+  }, [itemId]);
+  
+  if (!product) {
+    return <p>Cargando producto...</p>; // O mostrar un spinner de carga
+  }
+  
     return (  
    <div className="ItemDetailContainer">    
     

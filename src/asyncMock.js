@@ -33,7 +33,7 @@ const products = [
         "id": 4,
         "name":"Tarjeta universal para mini split", 
         "price": 50000,
-        "img": "https://www.refrimundo.com/products/916/tarjeta-universal-para-mini-split-display",
+        "img": "https://media.nidux.net/pull/800/599/10635/916-product-5e4718ae72cff-20509-1.jpg",
         "category": "Aire Acondicionado",
         "description": "Tarjeta universal para mini split display",
         "stock": 15
@@ -124,12 +124,17 @@ export const getProducts = () => {
     }
 
     export const getProductById = (productId) => {
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(products.find(prod => prod.id === productId));
-            }, 500)
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            const product = products.find((prod) => prod.id === parseInt(productId));
+            if (product) {
+              resolve(product);
+            } else {
+              reject("Producto no encontrado");
+            }
+          }, 500);
         })
-    }
+      }
 
     export const getProductsByCategory = (categoryId) => {
         return new Promise((resolve) => {

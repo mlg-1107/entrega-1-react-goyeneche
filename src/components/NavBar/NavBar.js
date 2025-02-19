@@ -2,6 +2,7 @@
 import fullRepuestosLogo from "../../images/fullRepuestos.png";
 import CartWidget from "../CartWidget/CartWidget";
 import { NavLink, Link } from "react-router-dom";
+import "./NavBar.css"
 
 const NavBar = () => {
     const categories = ["Aire Acondicionado", "Lavarropas", "Kits de carga"]; // Array con las categorías
